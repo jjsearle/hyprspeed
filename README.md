@@ -1,4 +1,4 @@
-# Starting point
+# hyprspeed
 
 [![build-ublue](https://github.com/jjsearle/hyprspeed/actions/workflows/build.yml/badge.svg)](https://github.com/jjsearle/hyprspeed/actions/workflows/build.yml)
 
