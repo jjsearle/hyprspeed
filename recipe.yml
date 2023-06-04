@@ -4,7 +4,7 @@
 name: hyprspeed
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/base-nvidia
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -58,6 +58,53 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
+    - dash
+    - cronie
+    - polkit-gnome
+    - alacritty
+    - grimshot
+    - mako
+    - slurp
+    - wofi
+    - sddm
+    - qt5ct
+    - thunar
+    - eom
+    - mpv
+    - youtube-dl
+    - ffmpeg
+    - mpd
+    - swaybg
+    - swaylock
+    - swayidle
+    - wtype
+    - wlogout
+    - wlr-randr
+    - wlsunset
+    - xorg-x11-server-Xwayland
+    - gamescope
+    - clipman
+    - qt5-qtwayland
+    - wireplumber
+    - pipewire-gstreamer
+    - pipewire-pulseaudio
+    - pipewire-alsa
+    - pipewire-jack-audio-connection-kit
+    - pipewire-plugin-libcamera
+    - just
+    - stow
+    - git
+    - pam-u2f
+    - pamu2fcfg
+    - fido2-tools
+    - unrar
+    - xdg-desktop-portal-hyprland
+    - waybar-hyprland
+    - hyprpicker
+    - hyprpaper
+    - hyprland-plugins
+    - hyprland-autoname-workspaces
+    - hyprland 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
